@@ -1,0 +1,21 @@
+apply plugin: 'java-library'
+repositories {
+    jcenter()
+}
+//f2ba799f805d2a91759bcbf773fd0d9003ff05c8
+//        ./gradlew clean build bintrayUpload
+// -PbintrayUser=lupengyun
+// -PbintrayKey=f2ba799f805d2a91759bcbf773fd0d9003ff05c8
+// -PdryRun=false
+dependencies {
+}
+//apply plugin: 'com.novoda.bintray-release'
+//
+//publish {
+//    userOrg = 'lupengyun'
+//    groupId = 'com.lupy'
+//    artifactId = 'annotation'
+//    publishVersion = '1.1'
+//    desc = 'annotation libration'
+//    website = 'https://github.com/lupengyun/annotation'
+//}
