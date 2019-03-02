@@ -21,7 +21,7 @@ publish {
     userOrg = 'lupengyun'
     groupId = 'com.lupy'
     artifactId = 'compiler'
-    publishVersion = '1.1'
-    desc = 'cylan message collection annotation processor'
+    publishVersion = '1.2'
+    desc = 'add a getcontainer method'
     website = 'https://github.com/lupengyun/annotation'
 }

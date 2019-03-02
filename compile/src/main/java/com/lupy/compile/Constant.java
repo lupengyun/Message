@@ -11,4 +11,5 @@ public class Constant {
     public static final String CONTAINER_FIELD_NAME = "container";
     public static final String SINGLETON_FIELD = "instance";
     public static final String SINGLETON_INIT_METHOD = "get";
+    public static final String GET_CONTAINER = "getContainer";
 }

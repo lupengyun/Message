@@ -142,11 +142,20 @@ public class MsgProcessor extends AbstractProcessor {
         }
 
 
+        //add getContainerMethod
+        MethodSpec getContainer = MethodSpec.methodBuilder(Constant.GET_CONTAINER)
+                .addModifiers(Modifier.PUBLIC)
+                .returns(paramter)
+                .addStatement("return $L",Constant.CONTAINER_FIELD_NAME)
+                .build();
+
+
         TypeSpec typeSpec = TypeSpec.classBuilder(Constant.CLASS_NAME + modelName)
                 .addModifiers(Modifier.PUBLIC)
                 .addMethod(constroctor)
                 .addMethod(signalton)
                 .addMethod(builder.build())
+                .addMethod(getContainer)
                 .addField(signaltonField)
                 .addField(map)
                 .addJavadoc("do not edit")
