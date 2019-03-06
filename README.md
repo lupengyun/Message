@@ -3,7 +3,7 @@
 
 #### 使用
 
-* 全局gradle 添加仓库直接地址
+* 全局gradle 添加仓库直接地址 (可以不添加，已经通过jcenter审核)
  ```
  repositories {
         maven { url 'https://dl.bintray.com/lupengyun/maven' }
